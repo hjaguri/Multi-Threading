@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 myThread mt=new myThread();//Now create thread object
         mt.start(); // now we can call run method using start method call (invoke the thread).
-        //if we can call again the start method then they thorw the error.We can can not invoke the thread exception
+        //if we can call again the start method then they thorw the error.We can  not invoke the thread exception
 
  myRunnable mr=new myRunnable();
  Thread th=new Thread(mr);
@@ -27,7 +27,7 @@ class myThread extends Thread{
         System.out.println("Threading");
     }
 }
-
+//By using Runnable interface
 class myRunnable implements Runnable{
         public void run(){
             System.out.println("Runnable");
@@ -36,3 +36,10 @@ class myRunnable implements Runnable{
 
 //------------------------------------------------------------------------------------------------------------------------------------
 
+
+// Life Cycle of thread
+//New----->Runnable------------>Running---------->dead
+//          \                         /
+//            \                     /
+//               \               /
+//                wating   , sleep (block , waiting)
