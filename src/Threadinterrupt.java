@@ -9,12 +9,13 @@ public class Threadinterrupt extends Thread{
     @Override
     public void run() {
 
-      //  System.out.println("Check the thread is interrupted : " + Thread.interrupted());//true --> // this method also change the status of interrupt method from true to false
-        System.out.println(Thread.currentThread().isInterrupted()); //it always give true
+      // System.out.println("Check the thread is interrupted : " + Thread.interrupted());//true --> // this method also change the status of interrupt method from true to false
+
+       System.out.println(Thread.currentThread().isInterrupted()); //it always give true
         for(int i=0;i<5;i++){try{
             sleep(1000);
             System.out.println(i);
-          //  System.out.println(Thread.currentThread().isInterrupted());
+            System.out.println(Thread.currentThread().isInterrupted());
          //   System.out.println("Check the thread is interrupted : " + Thread.interrupted()); ->give false
         }
         catch (Exception e){
