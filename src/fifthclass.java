@@ -18,6 +18,7 @@ public class fifthclass  extends  Thread{
     public static void main(String []args){
 
         System.out.println("Main thread");
+
         // case 1 : when ever your create a daemon thread it will start before the start method. if you write a daemon method after start method then
         //it will throw run time exception i.e illigalexceptionstateException
 
@@ -25,9 +26,9 @@ public class fifthclass  extends  Thread{
         // case 3: a deamon thread also a live same as a another or parent thread
         //case 4 :deamon thread nature it inherit the property from its parent thread
         //case 5 : JVM role in Deamon thread
-        //case 6 : Most of times, deamon thread has low priority but we can change its priority according ro our needs.
+        //case 6 : Most of times, deamon thread has low priority but we can change its priority according to our needs.
         fifthclass f=new fifthclass();
-        f.setDaemon(true); //way to create deamon thread
+        f.setDaemon(false); //way to create deamon thread
         f.start();
 
     }

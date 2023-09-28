@@ -4,7 +4,7 @@ public class fourth_class extends  Thread{
         super.run();
         System.out.println("Thread Run");
         System.out.println(Thread.currentThread().getName());
-// if you have one one thread then you can set the name of the thread
+// if you have  one thread then you can set the name of the thread
     }
 
     public static void main(String[] args) {
