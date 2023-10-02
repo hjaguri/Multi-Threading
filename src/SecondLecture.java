@@ -16,7 +16,7 @@ public class SecondLecture {
 
 
         //----------------------------------------------------------------------------------------
-        myThread mt1=new myThread();
+        myThread1 mt1=new myThread1();
         mt1.start();
         myThread2 mt2=new myThread2(); // Multiple task  from  Multiple thread
         mt2.start();
